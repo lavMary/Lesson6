@@ -5,9 +5,16 @@ public class Main {
         Warrior warrior = new Warrior(1200, 70, 150);
         Beast beast = new Beast(100, 105, "Bubble");
         HealerDruid healerDruid = new HealerDruid(1900, 75,135);
-        Sword sword = new Sword();
-        Saber saber = new Saber();
+        Sword sword = new Sword("Archaic",700);
+        Saber saber = new Saber("Wickedness",600);
         Cossack cossack = new Cossack(9999, 999, 10000);
+
+        hero.heroInfo();
+        healer.heal();
+        warrior.powerfulHit();
+        beast.beastAttack();
+        healerDruid.heroInfo();
+        cossack.heroInfo();
     }
 
 }
